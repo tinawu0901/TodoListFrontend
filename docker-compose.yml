@@ -1,0 +1,14 @@
+# docker-compose.yml
+version: "3"
+services:
+  vue:
+    build: .
+    ports:
+      - "8080:8080"
+    networks:
+      - dockermysqlinittable_default
+# 需要在services同级声明一下外部网络
+networks:
+  dockermysqlinittable_default:
+     external: true
+
