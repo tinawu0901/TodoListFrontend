@@ -4,7 +4,7 @@ services:
   vue:
     build: .
     ports:
-      - "8080:8080"
+      - "8081:8081"
     networks:
       - dockermysqlinittable_default
 # 需要在services同级声明一下外部网络
